@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio-Pro</title>
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -11,29 +11,28 @@
 <body>
     <header class="container mx-auto mt-4">
         <section class="flex justify-between">
-            <h1 class="text-xl font-bold">Paguel Ferdinand</h1>
-            <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Services">Services</a></li>
-                    <li><a href="#Project">Project</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+            <h1 class="text-xl font-bold"><span class="text-blue-800">Paguel </span>Ferdinand</h1>
+            <nav class="font-semibold">
+                <ul class="flex space-x-10 text-xl">
+                    <li><a href="#About" class="inline-block hover:text-blue-800 transform hover:scale-75 transition">About</a></li>
+                    <li><a href="#Services" class="inline-block hover:text-blue-800 transform hover:scale-75 transition">Services</a></li>
+                    <li><a href="#Project" class="inline-block hover:text-blue-800 transform hover:scale-75 transition">Project</a></li>
+                    <li><a href="#Contact" class="inline-block hover:text-blue-800 transform hover:scale-75 transition">Contact</a></li>
                 </ul>
             </nav>
-            <div class="text-xl space-x-1">
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-tiktok"></i>
+            <div class="text-xl space-x-3">
+                <i class="fa-brands fa-linkedin inline-block hover:text-blue-800 transform hover:scale-75 transition cursor-pointer"></i>
+                <i class="fa-brands fa-github inline-block hover:text-blue-800 transform hover:scale-75 transition cursor-pointer"></i>
+                <i class="fa-brands fa-facebook inline-block hover:text-blue-800 transform hover:scale-75 transition cursor-pointer"></i>
+                <i class="fa-brands fa-instagram inline-block hover:text-blue-800 transform hover:scale-75 transition cursor-pointer"></i>
+                <i class="fa-brands fa-tiktok inline-block hover:text-blue-800 transform hover:scale-75 transition cursor-pointer"></i>
             </div>
         </section>
     </header>
 
     <main class="container mx-auto mt-24">
         <section class="flex justify-between">
-            <div>
+            <div class="mt-10">
                 <p class="font-semibold text-6xl mb-5">I'm <span class="text-blue-800">Paguel Ferdinand</span><br>Graphic Designer</p>
                 <span>I'm creative designer based in Lubumbashi <br>
                     I'm very passionane and  dedicated to my work
@@ -47,58 +46,134 @@
                 </div>
             </div>
             <div>
-                <img src="Img Hero Section/Gallery_1759211711746.jpg" alt="" class="h-96 w-96 md:h-96 md:w-96 object-cover">
+                <img src="Img Hero Section/Gallery_1759211711746.png" alt="" class="h-96 w-96 md:h-96 md:w-96 object-cover">
             </div>
         </section>
 
-        <section class="mt-10">
-            <div class="flex items-center justify-center space-x-60 border rounded-full font-bold p-2">
-                <div>
-                    <h1>more than</h1>
-                    <p class="text-blue-800">20++ Clients</p>
-                </div>
-                <p class="text-amber-500">SOFT-UNIV</p>
-                <p class="text-red-500">SC MATH-INFO</p>
-                <p class="text-green-400">ADOREL-MUSIQUE</p>
+        <section class="mt-16 px-4">
+            <!-- Titre section -->
+            <div class="text-center">
+              <h1 class="font-bold text-3xl md:text-4xl">Services</h1>
+              <p class="text-gray-600 mt-2 text-sm md:text-base">Ce que je propose pour donner vie à vos projets</p>
+            </div>
+
+            <!-- Grille des services -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+              <!-- Service 1 -->
+              <div class="bg-blue-50 p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-blue-600 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3c-4.97 0-9 3.582-9 8a9 9 0 0018 0c0-4.418-4.03-8-9-8z" />
+                </svg>                  
+                <h2 class="text-center font-bold text-lg mb-4 text-blue-900">Identité visuelle & Branding</h2>
+                <ul class="text-sm text-gray-700 space-y-2">
+                  <li>Création de logos</li>
+                  <li>Élaboration de chartes graphiques</li>
+                  <li class="ml-4 text-gray-500 text-xs">(typographies, couleurs, icônes)</li>
+                </ul>
+              </div>
+
+              <!-- Service 2 -->
+              <div class="bg-blue-50 p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-blue-600 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.5L17 7.5V19a2 2 0 01-2 2z" />
+                </svg>                  
+                <h2 class="text-center font-bold text-lg mb-4 text-blue-900">Supports imprimés</h2>
+                <ul class="text-sm text-gray-700 space-y-2">
+                  <li>Cartes de visite, flyers, affiches</li>
+                  <li>Brochures, catalogues, magazines</li>
+                  <li>Packaging & étiquettes produits</li>
+                </ul>
+              </div>
+
+              <!-- Service 3 -->
+              <div class="bg-blue-50 p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-blue-600 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 8h20M2 16h20M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z" />
+                </svg>
+                <h2 class="text-center font-bold text-lg mb-4 text-blue-900">Supports digitaux</h2>
+                <ul class="text-sm text-gray-700 space-y-2">
+                  <li>Bannières web, posts réseaux sociaux</li>
+                  <li>Templates pour newsletters</li>
+                  <li class="ml-4 text-gray-500 text-xs">(PowerPoint/Keynote)</li>
+                  <li>Visuels publicitaires</li>
+                </ul>
+              </div>
+
+              <!-- Service 4 -->
+              <div class="bg-blue-50 p-6 rounded-2xl shadow hover:shadow-lg transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-blue-600 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l1-2a2 2 0 012-2h3l2-2h4l2 2h3a2 2 0 012 2l1 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" />
+                    <circle cx="12" cy="13" r="3" stroke="currentColor" stroke-width="2" />
+                </svg>                  
+                <h2 class="text-center font-bold text-lg mb-4 text-blue-900">Retouche & Photomontage</h2>
+                <ul class="text-sm text-gray-700 space-y-2">
+                  <li>etouche photo professionnelle</li>
+                  <li>Photomontages créatifs</li>
+                  <li>Mise en valeur produits</li>
+                  <li class="ml-4 text-gray-500 text-xs">(e-commerce, publicité)</li>
+                </ul>
+              </div>
             </div>
         </section>
 
-        <section class="mt-10">
-            <h1 class="italic font-bold text-3xl">My <span class="text-blue-800">Services</span></h1>
-            <div class="flex justify-between gap-4 mt-10">
-                <div class="bg-blue-50 p-4 h-40 rounded shadow">
-                    <h1 class="text-center">Identité visuelle & Branding</h1>
-                    <div class="text-sm">
-                        <p>Création de logos</p>
-                        <p>Élaboration de chartes graphiques <br> <span> (typographies, couleurs, icônes)</span></p>
-                    </div>
+        <section class="mt-14 px-4">
+            <h1 class="font-bold text-3xl text-center">Projects</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+                <div class="bg-white rounded-lg shadow p-4 flex flex-col">
+                    <img src="img projets/capture afro1.png" alt="HP Spectre x360" class="mb-4 rounded-md">
+                    <h3 class="text-xl font-semibold mb-1">Concption du logo <br>(Afro)</h3>
+                    <p class="text-gray-500 mb-3">CP:456-DEF</p>
                 </div>
-                <div class="bg-blue-50 p-4 h-40 rounded shadow">
-                    <h1 class="text-center">Supports imprimés</h1>
-                    <div class="text-sm">
-                        <p>Cartes de visite, flyers, affiches, dépliants</p>
-                        <p>Brochures, catalogues, magazines</p>
-                        <p>Packaging & étiquettes produits</p>
-                    </div>
+                <div class="bg-white rounded-lg shadow p-4 flex flex-col">
+                    <img src="img projets/capture afro2.png" alt="HP Spectre x360" class="mb-4 rounded-md">
+                    <h3 class="text-xl font-semibold mb-1">Make-up du logo <br>(Afro)</h3>
+                    <p class="text-gray-500 mb-3">CP:123-ABC</p>
                 </div>
-                <div class="bg-blue-50 p-4 h-40 rounded shadow">
-                    <h1 class="text-center">Supports digitaux</h1>
-                    <div class="text-sm">
-                        <p>Bannières web, posts pour réseaux sociaux</p>
-                        <p>Templates pour newsletters et présentations <br> <span>(PowerPoint/Keynote)</span></p>
-                        <p>Visuels publicitaires pour campagnes digitales</p>
-                    </div>
+
+                <div class="bg-white rounded-lg shadow p-4 flex flex-col">
+                    <img src="img projets/canapé.png" alt="HP Spectre x360" class="mb-4 rounded-md">
+                    <h3 class="text-xl font-semibold mb-1">ASUS ExpertBook B5</h3>
+                    <p class="text-gray-500 mb-3">CP:345-TYL</p>
                 </div>
-                <div class="bg-blue-50 p-4 h-40 rounded shadow">
-                    <h1 class="text-center">Retouche & Photomontage</h1>
-                    <div class="text-sm">
-                        <p>Retouche photo professionnelle</p>
-                        <p>Photomontages créatifs</p>
-                        <p>Mise en valeur de produits <br> <span>(e-commerce, publicité)</span></p>
-                    </div>
+
+                <div class="bg-white rounded-lg shadow p-4 flex flex-col">
+                    <img src="img projets/canapé1.png" alt="HP Spectre x360" class="mb-4 rounded-md">
+                    <h3 class="text-xl font-semibold mb-1"> Dell XPS 13</h3>
+                    <p class="text-gray-500 mb-3">CP:678-XYZ</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow p-4 flex flex-col">
+                    <img src="img projets/grillade food.png" alt="HP Spectre x360" class="mb-4 rounded-md">
+                    <h3 class="text-xl font-semibold mb-1">Lenovo ThinkPad X1</h3>
+                    <p class="text-gray-500 mb-3">CP:456-DEF</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow p-4 flex flex-col">
+                    <img src="img projets/grillade food1.png" alt="HP Spectre x360" class="mb-4 rounded-md">
+                    <h3 class="text-xl font-semibold mb-1">Lenovo ThinkPad X1</h3>
+                    <p class="text-gray-500 mb-3">CP:456-DEF</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow p-4 flex flex-col">
+                    <img src="img projets/journée_de_travail.png" alt="HP Spectre x360" class="mb-4 rounded-md">
+                    <h3 class="text-xl font-semibold mb-1">Lenovo ThinkPad X1</h3>
+                    <p class="text-gray-500 mb-3">CP:456-DEF</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow p-4 flex flex-col">
+                    <img src="img projets/journée_travail1.png" alt="HP Spectre x360" class="mb-4 rounded-md">
+                    <h3 class="text-xl font-semibold mb-1">Lenovo ThinkPad X1</h3>
+                    <p class="text-gray-500 mb-3">CP:456-DEF</p>
                 </div>
             </div>
         </section>
     </main>
+
+    <section class="mt-14">
+        <div class="bg-gray-800 h-60">
+            <h1 class="container mx-auto text-2xl font-bold text-white">Contact me</h1>
+        </div>
+    </section>
+
 </body>
 </html>
